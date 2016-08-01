@@ -1,0 +1,165 @@
+ body,ul,li{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+body{
+  background-image: url(imgs/main_bg.jpg);
+  background-size: 100%;
+}
+.star{
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+}
+.scene{
+  width:1200px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.yun{
+  width:950px;
+  height:100px;
+  background-image: url(imgs/yun.png);
+  position: absolute;
+  left:50px;
+  top:-10px;
+  z-index: 10;
+  animation-name:move;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease;
+}
+@keyframes move{
+  0%{
+    left:50px;
+  }
+  100%{
+    left:150px;
+  }
+}
+#fenshu,#shengming,#jishi{
+  width:80px;
+  height:80px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 25px;
+  color: red;
+  font-weight: bold;
+  position: absolute; 
+  bottom:30px;
+}
+#fenshu{
+   right:100px;
+   background-image: url(imgs/Jfen.png);
+}
+#shengming{
+  right:10px;
+ background-image: url(imgs/Jfen.png);
+  background-position: right;
+}
+#jishi{
+  right:-75px;
+  background-image: url(imgs/Jfen.png);
+  background-position: right;
+}
+.box{
+  width:500px;
+  height:0px;
+  overflow: hidden;
+  position: absolute;
+  left:350px;
+  top:70px;
+  background-image: url(imgs/popup.png);
+  background-position: bottom;
+  z-index: 9;
+}
+.java{
+  position: absolute;
+  left:90px;
+  bottom:130px;
+
+}
+.start{
+  position: absolute;
+  left:180px;
+  bottom:30px;
+}
+
+
+.changjing{
+    width:560px;
+    height: 560px;
+    /*border:10px solid rgb(51,36,29);*/
+    position: absolute;
+    top:130px;
+    left:80px;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    /*display: none;*/
+    opacity: 0;
+    transform:translateY(-100%);
+    transition:all 0.8s ease;
+}
+.changjing .block{
+    width: 28px;
+    height: 28px;
+    float:left;
+}
+.changjing .she{
+    background-image: url(imgs/she.png);
+    background-size:cover;
+}
+.changjing .food{
+    background-image: url(imgs/shiwu.jpg);
+    background-size:cover;
+}
+.changjing.kong{
+    display:none;
+}
+.tishi{
+    width:300px;
+    height:120px;
+    background: deepskyblue;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    margin:auto;
+    color:white;
+    line-height: 100px;
+    text-align: center;
+    font-size:24px;
+    font-weight:400;
+    transform: translateY(-100%);
+    transition: all 0.6s ease;
+    opacity: 0;
+}
+.tishi.diaoluo{
+    transform: translateY(0);
+    opacity: 1;
+}
+ .button{
+    width:150px;
+     height:200px;
+     /*background:red;*/
+     position: absolute;
+     top:150px;
+     left:20px;
+}
+ .button .goon{
+     width:139px;
+     height:39px;
+     background: url(imgs/goon.png);
+ }
+ .button .agian{
+     margin-top: 20px;
+     width:139px;
+     height:39px;
+     background: url(imgs/restart.png);
+ }
+ 
